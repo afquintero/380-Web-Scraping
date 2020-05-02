@@ -19,6 +19,7 @@ except NoSuchElementException:
     print("Following " + following.text)
 else:
     print(unavailable.text)
+    browser.close()
 
  
 #browser.close()
