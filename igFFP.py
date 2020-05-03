@@ -17,9 +17,10 @@ except NoSuchElementException:
     print(followers.text + " followers")
     print(posts.text + " posts")    
     print("Following " + following.text)
+    browser.get("https://www.instagram.com/p/B_nPSlABiFl/")
+    postlikes = browser.find_element_by_xpath('//*[@id="react-root"]/section/main/div/div/article/div[2]/section[2]/div/div/button/span')
+    print(postlikes.text + " likes")
 else:
     print(unavailable.text)
     browser.close()
 
- 
-#browser.close()
